@@ -1,0 +1,94 @@
+{
+  "name": "loopback",
+  "description": "LoopBack: Open API Framework for Node.js",
+  "homepage": "http://loopback.io",
+  "keywords": [
+    "restful",
+    "rest",
+    "api",
+    "express",
+    "restify",
+    "koa",
+    "auth",
+    "security",
+    "oracle",
+    "mysql",
+    "nosql",
+    "mongo",
+    "mongodb",
+    "sqlserver",
+    "mssql",
+    "postgres",
+    "postgresql",
+    "soap",
+    "StrongLoop",
+    "framework",
+    "mobile",
+    "mBaaS"
+  ],
+  "version": "1.8.8",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "dependencies": {
+    "debug": "~0.8.1",
+    "express": "~3.5.0",
+    "strong-remoting": "~1.5.0",
+    "inflection": "~1.3.5",
+    "nodemailer": "~0.7.1",
+    "ejs": "~1.0.0",
+    "bcryptjs": "~0.7.12",
+    "underscore.string": "~2.3.3",
+    "underscore": "~1.6.0",
+    "uid2": "0.0.3",
+    "async": "~0.9.0"
+  },
+  "peerDependencies": {
+    "loopback-datasource-juggler": ">=1.4.0 <1.6.0"
+  },
+  "devDependencies": {
+    "loopback-datasource-juggler": ">=1.4.0 <1.6.0",
+    "mocha": "~1.18.0",
+    "strong-task-emitter": "0.0.x",
+    "supertest": "~0.12.1",
+    "chai": "~1.9.1",
+    "loopback-testing": "~0.1.2",
+    "browserify": "~4.1.5",
+    "grunt": "~0.4.5",
+    "grunt-browserify": "~2.1.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "karma-script-launcher": "~0.1.0",
+    "karma-chrome-launcher": "~0.1.3",
+    "karma-firefox-launcher": "~0.1.3",
+    "karma-html2js-preprocessor": "~0.1.0",
+    "karma-phantomjs-launcher": "~0.1.4",
+    "karma": "~0.12.16",
+    "karma-browserify": "~0.2.0",
+    "karma-mocha": "~0.1.3",
+    "grunt-karma": "~0.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strongloop/loopback"
+  },
+  "browser": {
+    "express": "./lib/browser-express.js",
+    "connect": false,
+    "passport": false,
+    "passport-local": false,
+    "nodemailer": false
+  },
+  "license": {
+    "name": "Dual MIT/StrongLoop",
+    "url": "https://github.com/strongloop/loopback/blob/master/LICENSE"
+  },
+  "readme": "LoopBack is a highly extensible, open source Node.js framework that enables you to:\n\n  * Create dynamic end-to-end REST APIs with little or no coding\n  * Easily access data from Oracle, MySQL, PostgreSQL, MS SQL Server, MongoDB, SOAP and other REST APIs\n  * Incorporate model relationships and access controls for complex APIs\n  * Run your application on-premises or in the cloud  \n  * Use built-in push, geolocation, and file services for mobile use cases\n  * Easily create client apps using Android, iOS, and JavaScript SDKs\n\nLoopBack consists of:\n  * A library of Node.js modules.\n  * A command line tool, `slc`, for creating and working with LoopBack applications.\n  * Client SDKs for native and web-based mobile clients.\n\nFor more details, see http://loopback.io/.\n\n## LoopBack modules \n\nIn addition to the [main LoopBack module](https://github.com/strongloop/loopback), LoopBack consists of numerous other modules that implement specific functionality, \nas illustrated below:\n\n![LoopBack modules](https://github.com/strongloop/loopback/raw/master/docs/assets/lb-modules.png \"LoopBack modules\")\n\n* Frameworks\n  * [loopback](https://github.com/strongloop/loopback)\n  * [loopback-datasource-juggler](https://github.com/strongloop/loopback-datasource-juggler)\n  * [strong-remoting](https://github.com/strongloop/strong-remoting)\n\n* Enterprise Connectors\n  * [loopback-connector-mongodb](https://github.com/strongloop/loopback-connector-mongodb)\n  * [loopback-connector-mysql](https://github.com/strongloop/loopback-connector-mysql)\n  * [loopback-connector-oracle](https://github.com/strongloop/loopback-connector-oracle)\n  * [loopback-connector-mssql](https://github.com/strongloop/loopback-connector-mssql)\n  * [loopback-connector-postgresql](https://github.com/strongloop/loopback-connector-postgresql)\n  * [loopback-connector-rest](https://github.com/strongloop/loopback-connector-rest)\n  * [loopback-connector-soap](https://github.com/strongloop/loopback-connector-soap) \n\n* Mobile services\n  * [loopback-push-notification](https://github.com/strongloop/loopback-push-notification)\n  * [loopback-storage-service](https://github.com/strongloop/loopback-storage-service)\n\n* Clients\n  * [loopback-ios](https://github.com/strongloop/loopback-ios)\n  * [strong-remoting-ios](https://github.com/strongloop/strong-remoting-ios)\n  * [loopback-android](https://github.com/strongloop/loopback-android)\n  * [strong-remoting-android](https://github.com/strongloop/strong-remoting-android)\n  * [loopback-angular](https://github.com/strongloop/loopback-angular)\n\n* Tools\n  * [loopback-explorer](https://github.com/strongloop/loopback-explorer)\n  * [loopback-workspace](https://github.com/strongloop/loopback-workspace)\n  * [strong-cli](https://github.com/strongloop/strong-cli)\n\n* Examples\n  * [loopback-example-full-stack](https://github.com/strongloop/loopback-example-full-stack)\n  * [loopback-example-office-supplies](https://github.com/strongloop/loopback-example-office-supplies)\n  * [loopback-example-todo](https://github.com/strongloop/loopback-example-todo)\n  * [loopback-example-access-control](https://github.com/strongloop/loopback-example-access-control)\n  * [loopback-example-proxy](https://github.com/strongloop/loopback-example-proxy)\n  * [strongloop-community/loopback-example-datagraph](https://github.com/strongloop-community/loopback-example-datagraph)\n  * [strongloop-community/loopback-example-database](https://github.com/strongloop-community/loopback-example-database)\n  * [strongloop-community/loopback-examples-ios](https://github.com/strongloop-community/loopback-examples-ios)\n  * [strongloop-community/loopback-example-ssl](https://github.com/strongloop-community/loopback-example-ssl)\n\n## Resources \n\n  * [Documentation](http://docs.strongloop.com/display/DOC/LoopBack).\n  * [API documentation](http://apidocs.strongloop.com/loopback).\n  * [LoopBack Google Group](https://groups.google.com/forum/#!forum/loopbackjs).\n  * [GitHub issues](https://github.com/strongloop/loopback/issues).\n  * Read more about the [LoopBack's features](https://github.com/strongloop/loopback/wiki/Features).\n\n## Contributing\n\nPlease read [CONTRIBUTING.md](CONTRIBUTING.md) on how to contribute.\n\nA brief guide for [contributing to LoopBack projects](https://github.com/strongloop/loopback/wiki/How-To-Contribute).\n\n[![Analytics](https://sl-beacon.appspot.com/UA-37775386-1/github/loopback/readme?pixel)](https://github.com/strongloop/loopback)\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/strongloop/loopback/issues"
+  },
+  "_id": "loopback@1.8.8",
+  "_from": "loopback@1.8.8"
+}
